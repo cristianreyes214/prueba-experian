@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { Ng2TelInputModule } from 'ng2-tel-input';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
@@ -24,6 +25,7 @@ import { Punto2Component } from './paginas/punto2/punto2.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    Ng2TelInputModule,
     HttpClientModule,
     FormsModule
   ],

@@ -14,5 +14,14 @@ export class InformacionGeneralComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onCountryChange(event: any) {
+    alert(event.value);
+  }
+
+  telInputObject(obj: any) {
+    console.log(obj);
+    obj.setCountry('in');
+  }
+
 
 }

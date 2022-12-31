@@ -15,3 +15,7 @@
   width: 50%;
 }
 
+:host ::ng-deep .iti {
+  width: 100%;
+}
+

@@ -1,0 +1,21 @@
+<h1>Enviar mensaje</h1>
+<hr>
+<h6>Titulo</h6>
+<input type="text" [(ngModel)]="mensaje.title" #title>
+<h6>Mensaje</h6>
+<input type="text" [(ngModel)]="mensaje.body">
+<br>
+<br>
+<button class="btn btn-outline-success" (click)="enviar_post()">Enviar</button>
+<br>
+{{ respuesta | json }}
+
+<br>
+<br>
+<h1>Lista de post</h1>
+<hr>
+<div *ngIf="post_list.length > 0">
+  <ul *ngFor="let item of post_list" >
+    <li>{{ item.title }}</li>
+  </ul>
+</div>

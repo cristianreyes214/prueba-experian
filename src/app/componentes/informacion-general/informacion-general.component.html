@@ -1,0 +1,80 @@
+<div class="contenido">
+  <h5 class="titulo2">Información general</h5>
+
+  <form>
+
+    <div class="form-group mt-4 mb-4">
+      <label class="titulo1">Nombres</label>
+      <input class="form-control inputDisabled"
+              type="text"
+              placeholder="Nombre completo"
+              value="Carlos"
+              disabled>
+    </div>
+
+    <div class="form-group mt-4 mb-4">
+      <label class="titulo1">Apellidos</label>
+      <input class="form-control inputDisabled"
+              type="text"
+              placeholder="Apellido completo"
+              value="Monsalve"
+              disabled>
+    </div>
+
+    <div class="form-group mt-4 mb-4">
+      <label class="titulo1">Documento de identidad</label>
+      <input class="form-control inputDisabled"
+              type="text"
+              placeholder="Tipo de documento de identidad"
+              value="Cédula de ciudadanía"
+              disabled>
+    </div>
+
+    <div class="form-group mt-4 mb-4">
+      <label class="titulo1">Número de documento de identidad</label>
+      <input class="form-control inputDisabled"
+              type="number"
+              placeholder="Número de documento de identidad"
+              value="10000000"
+              disabled>
+    </div>
+
+    <div class="form-group mt-4 mb-4">
+      <label class="titulo1">E-mail</label>
+      <input class="form-control"
+              type="email"
+              placeholder="ejemplo@hotmail.com"
+              value="@gmail.com">
+    </div>
+
+    <div class="form-group mt-4 mb-4">
+      <label class="titulo1">Celular</label>
+      <input class="form-control"
+              type="number"
+              value="3123681164">
+    </div>
+
+    <div class="form-group mt-4 mb-4">
+      <label class="titulo1">Fecha de nacimiento</label>
+      <input class="form-control"
+              type="date"
+              value="1986-12-24">
+    </div>
+
+    <div class="form-group mt-4 mb-4">
+      <label class="titulo1">Genero</label>
+      <br>
+      <button class="btn btn-light btn-genero">Hombre</button>
+      <button class="btn btn-light btn-genero">Mujer</button>
+    </div>
+
+    <button class="btn btn-primary" *ngIf="editar">
+      Editar
+    </button>
+    <button class="btn btn-primary" *ngIf="!editar">
+      Guardar
+    </button>
+
+  </form>
+
+</div>

@@ -1,0 +1,67 @@
+.encabezado{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3%;
+  background-color: #E4E0E8;
+}
+
+.btn-menu{
+  border: none;
+  border-radius: 5px;
+  padding-left: 15%;
+  padding-right: 15%;
+  color: white;
+  background-color: #632678;
+}
+
+.menu{
+  display: flex;
+  width: 100%;
+  padding: 5%;
+  flex-direction: row;
+  padding-bottom: 25%;
+}
+
+.item{
+  width: 25%;
+  font-size: x-small;
+  position: relative;
+}
+
+.btn-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border: none;
+  position: absolute;
+}
+
+.btn-item i{
+  font-size: 30px;
+  border-radius: 95px;
+  padding: 10%;
+}
+
+.seleccionado i{
+  background-color: #632678;
+  color: white;
+}
+
+.noSeleccionado i{
+  background-color: #E4E0E8;
+}
+
+.notificacion{
+  position: absolute;
+  right: 15%;
+  color: #BC1656;
+}
+
+.paginas{
+  background-color: #F1F1F7;
+  padding: 2%;
+}
+
+

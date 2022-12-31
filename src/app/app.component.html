@@ -1,0 +1,55 @@
+<div class="encabezado">
+  <div>
+    <b class="titulo1">Hola</b><br>
+    Carlos
+  </div>
+  <div style="width: 40%;">
+    <button class="btn-menu">Perfil &nbsp;&nbsp;&nbsp;<i class="fas fa-chevron-right"></i></button>
+    &nbsp;&nbsp;
+    <i class="fas fa-info-circle" style="color: #632678;"></i>
+  </div>
+</div>
+
+<div class="mt-4">
+  <div class="menu cuadro">
+    <div class="item">
+      <button class="btn-item seleccionado" [routerLink]="['/inicio']">
+        <i class="far fa-user-circle mb-2"></i>
+        <label>Vista general de la cuenta</label>
+      </button>
+    </div>
+    <div class="item">
+      <button class="btn-item noseleccionado" [routerLink]="['/editarPerfil']">
+        <i class="fa fa-pencil mb-2"></i>
+        <label>Editar perfil</label>
+      </button>
+      <div class="notificacion">
+        <i class="fas fa-circle"></i>
+      </div>
+    </div>
+    <div class="item">
+      <button class="btn-item noseleccionado" disabled>
+        <i class="far fa-user-circle mb-2"></i>
+        <label>Cambio de contraseña</label>
+      </button>
+      <div class="notificacion">
+        <i class="fas fa-circle"></i>
+      </div>
+    </div>
+    <div class="item">
+      <button class="btn-item noseleccionado">
+        <i class="far fa-bell mb-2"></i>
+        <label>Configuración de notificaciones</label>
+      </button>
+      <div class="notificacion">
+        <i class="fas fa-circle"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="paginas">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+
